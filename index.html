@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlantaSana | Identifica tu Planta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <div class="brand">
+        <div class="logo">
+          <span class="leaf">🍃</span>
+          PlantaSana
+        </div>
+        <nav class="nav-links">
+          <a href="#inicio" class="active">Inicio</a>
+          <a href="#plantas">Plantas</a>
+          <a href="#consejos">Consejos</a>
+        </nav>
+      </div>
+      <div class="hero-copy" id="inicio">
+        <p class="eyebrow">Identifica tu</p>
+        <h1>Planta</h1>
+        <p class="hero-description">
+          Sube una foto de tu planta para conocer todo sobre ella.
+        </p>
+      </div>
+    </header>
+
+    <section class="uploader-section">
+      <div class="upload-card">
+        <div class="upload-dropzone" id="dropzone">
+          <input type="file" id="fileInput" accept="image/*" />
+          <div class="upload-content">
+            <button type="button" class="upload-button" id="uploadButton">Subir Foto de la Planta</button>
+            <span class="upload-hint">O arrastra tu imagen aquí</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="preview-card">
+        <div class="preview-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80" alt="Foto de Aloe Vera" id="previewImage" />
+        </div>
+        <div class="preview-caption">Foto subida: <strong id="previewLabel">Aloe Vera</strong></div>
+      </div>
+    </section>
+
+    <section class="info-grid">
+      <article class="card info-card">
+        <h2>Información de la Planta</h2>
+        <ul>
+          <li><strong>Nombre:</strong> Aloe Vera</li>
+          <li><strong>Tipo:</strong> Suculenta</li>
+          <li><strong>Cuidados:</strong> Mucha luz, riego moderado</li>
+        </ul>
+      </article>
+
+      <article class="card cure-card">
+        <h2>Propiedades Curativas</h2>
+        <ul>
+          <li>Cicatrizante y regenerativo</li>
+          <li>Hidratante para la piel</li>
+          <li>Alivia quemaduras</li>
+          <li>Fortalece el sistema inmune</li>
+        </ul>
+      </article>
+
+      <article class="card testimonial-card">
+        <h2>Testimonios de Usuarios</h2>
+        <div class="testimonial">
+          <p>“El aloe vera me ayudó a sanar mis quemaduras de sol.”</p>
+          <span>- Laura M.</span>
+        </div>
+        <div class="testimonial">
+          <p>“Excelente para hidratar mi piel seca.”</p>
+          <span>- Carlos G.</span>
+        </div>
+      </article>
+
+      <article class="card problem-card">
+        <h2>Problemas y Soluciones</h2>
+        <p class="problem-title">Plaga Detectada: Cochinillas</p>
+        <div class="problem-block">
+          <p><strong>Problema</strong></p>
+          <p>Presencia de cochinillas en las hojas</p>
+        </div>
+        <div class="solution-block">
+          <p><strong>Solución</strong></p>
+          <ul>
+            <li>Limpia las hojas con alcohol</li>
+            <li>Usa aceite de neem</li>
+            <li>Aplica jabón potásico</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="footer-banner" id="consejos">
+      <p>¿Tienes más dudas? ¡Consulta con nuestros expertos?</p>
+      <button type="button">Contactar Ahora</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
